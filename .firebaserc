@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lista-tareas-7bb92": {
+      "hosting": {
+        "reto-prueba": [
+          "lista-tareas-7bb92"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lista-tareas-7bb92"
+  }
+}

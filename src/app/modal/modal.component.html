@@ -1,0 +1,71 @@
+<div class="container mt-3">
+  <h1>{{data.titulo}}</h1>
+
+  <div class="row mt-3">
+    <div class="col-12">
+
+      <mat-card>
+
+        <!--        (ngSubmit)="consultarUsuario()"-->
+        <!--        [formGroup]="forma"-->
+
+        <form
+        >
+
+          <div class="row">
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Nombres</mat-label>
+                <input matInput placeholder="Nombres">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+            </div>
+
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Apellidos</mat-label>
+                <input matInput placeholder="Apellidos">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+            </div>
+
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Usuario</mat-label>
+                <input matInput placeholder="Usuario">
+                <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Estado</mat-label>
+                <mat-select>
+                  <mat-option value="true">Activo</mat-option>
+                  <mat-option value="false">Inactivo</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-outline-primary me-3">Adicionar</button>
+              <button class="btn btn-outline-info">Buscar</button>
+            </div>
+          </div>
+
+        </form>
+
+      </mat-card>
+    </div>
+  </div>
