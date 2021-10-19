@@ -158,10 +158,16 @@ export class AppComponent implements AfterViewInit {
 
   eliminarUsuario(elemnt: any) {
     console.log(elemnt)
+    const datosFIltrados = this.listaUsuarios.filter((user) => {
+      return !user.id === elemnt.id
+    })
+
+    this.listaUsuarios = [...datosFIltrados]
 
   }
 
   adicionarUsuario() {
+
     const dialogRef = this.dialog.open(ModalComponent, {
       width: '720px',
       data: {titulo: 'Crear Usuario'}
